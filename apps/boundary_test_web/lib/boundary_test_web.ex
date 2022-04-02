@@ -1,5 +1,6 @@
 defmodule BoundaryTestWeb do
   use Boundary,
+    top_level?: true,
     exports: [Endpoint],
     deps: [BoundaryTest]
 

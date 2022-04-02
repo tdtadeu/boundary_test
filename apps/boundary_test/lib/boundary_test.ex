@@ -1,5 +1,6 @@
 defmodule BoundaryTest do
   use Boundary,
+    top_level?: true,
     exports: [],
     deps: []
 
