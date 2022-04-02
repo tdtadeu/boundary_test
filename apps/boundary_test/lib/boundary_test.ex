@@ -1,4 +1,8 @@
 defmodule BoundaryTest do
+  use Boundary,
+    exports: [],
+    deps: []
+
   @moduledoc """
   BoundaryTest keeps the contexts that define your domain
   and business logic.

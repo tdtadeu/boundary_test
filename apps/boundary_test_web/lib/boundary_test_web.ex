@@ -1,4 +1,8 @@
 defmodule BoundaryTestWeb do
+  use Boundary,
+    exports: [Endpoint],
+    deps: [BoundaryTest]
+
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
