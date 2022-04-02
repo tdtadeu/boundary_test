@@ -20,6 +20,12 @@ defmodule BoundaryTestWeb.Router do
     get "/", PageController, :index
   end
 
+  scope "/", BoundaryTestWeb do
+    pipe_through :api
+
+    get "/users", UserController, :index
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", BoundaryTestWeb do
   #   pipe_through :api
