@@ -1,7 +1,7 @@
 defmodule BoundaryTest.Accounts do
   use Boundary,
     exports: [],
-    deps: []
+    deps: [BoundaryTest]
 
   @moduledoc """
   This is the accounts context.
