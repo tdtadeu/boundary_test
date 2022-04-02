@@ -1,7 +1,7 @@
 defmodule BoundaryTest.Accounts do
   use Boundary,
     exports: [],
-    deps: [BoundaryTest]
+    deps: []
 
   @moduledoc """
   This is the accounts context.
@@ -13,6 +13,4 @@ defmodule BoundaryTest.Accounts do
   alias BoundaryTest.Accounts.User
 
   def foo, do: User.foo()
-
-  def bar, do: BoundaryTest.foo()
 end
